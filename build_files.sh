@@ -1,7 +1,7 @@
 echo "BUILD START"
 
 # create a virtual environment named 'venv' if it doesn't already exist
-python3.10 -m venv venv
+python3.9 -m venv venv
 
 # activate the virtual environment
 source venv/bin/activate
@@ -15,4 +15,4 @@ python manage.py collectstatic --noinput
 echo "BUILD END"
 
 # [optional] Start the application here 
-# python manage.py runserver
+python manage.py runserver
