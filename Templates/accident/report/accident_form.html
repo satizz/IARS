@@ -1,0 +1,14 @@
+<!-- accidents/templates/accidents/create.html -->
+{% extends "base_generic.html" %}
+
+{%block content %}
+<h1>Report an Accident</h1>
+<hr />
+<form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+{% endblock %}

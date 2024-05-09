@@ -1,0 +1,23 @@
+<!-- iars/templates/iars/index.html -->
+{% extends "base_generic.html" %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Intelligent Accident Report System{% endblock %}</title>
+</head>
+<body>
+    <header>
+        <h1>{% block heading %}
+            Intelligent Accident Report System
+            {% endblock %}</h1>
+    </header>
+    <section>
+        {% block body %}
+        
+        {% endblock %}
+    </section>
+    <footer>
+        <p>&copy; Copyright {% now "Y" %}. Powered by Django.</p>
+    </footer>
+</body>
+</html>
